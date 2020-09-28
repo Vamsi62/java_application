@@ -15,7 +15,6 @@ pipeline {
                     }
                 }
                 stage('IT Test On parallel') {
-                    
                     steps {
                         sh 'echo thread 2'
                         sh 'sleep 10'
