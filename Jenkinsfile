@@ -12,7 +12,7 @@ pipeline {
        stage ('dockerization') {
            agent any
             steps{
-              sh 'docker build -t honeysundar/java_sra_007 .'
+              sh 'docker build -t vamsi62/myrepo1 .'
                 }
        }
        stage('Deploy Image') {
@@ -21,7 +21,7 @@ pipeline {
           
               withDockerRegistry([ credentialsId: "docker-hub", url: "" ])
                {
-                 sh 'docker push honeysundar/java_sra_007'
+                 sh 'docker push vamsi62/myrepo1'
                }
     
             }
