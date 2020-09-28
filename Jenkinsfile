@@ -4,7 +4,6 @@ pipeline {
         stage('Run Tests') {
             parallel {
                 stage('UT Test On parallel') {
-                    
                     steps {
                         sh 'echo thread 1'
                         sh 'sleep 10'
